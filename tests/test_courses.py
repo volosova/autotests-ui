@@ -1,6 +1,5 @@
 import pytest
 from playwright.sync_api import expect, Playwright, Page
-import time
 
 @pytest.mark.courses
 @pytest.mark.regression
