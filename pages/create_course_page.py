@@ -86,8 +86,8 @@ class CreateCoursePage(BasePage):
             title: str,
             estimated_time: str,
             description: str,
-            max_score: int,
-            min_score: int
+            max_score: str,
+            min_score: str
     ):
         expect(self.create_course_title_input).to_be_visible()
         expect(self.create_course_title_input).to_have_value(title)
@@ -109,8 +109,8 @@ class CreateCoursePage(BasePage):
             title: str,
             estimated_time: str,
             description: str,
-            max_score: int,
-            min_score: int
+            max_score: str,
+            min_score: str
     ):
         self.create_course_title_input.fill(title)
         expect(self.create_course_title_input).to_have_value(title)
